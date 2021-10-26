@@ -36,19 +36,26 @@ class ListadoPokemon extends React.Component {
       pokemonInfo.push({ ...guardar, ...masinfo, ...masinfo2 });
     }
     //console.log("valores pokemon2",guardar[0]?.url)
-    // guardarlista2(pokemonInfo);
     this.setState({
       pokemonInfo,
     });
   };
 
+  //function to modify the state
+
+  setPokeInfo=(filterPokemon)=>{
+   /* this.setState({
+      pokemonInfo:filterPokemon
+    })*/
+    console.log("imprimiendo en listado pokemon", filterPokemon);
+
+  }
+
+
   render() {
     return (
       <>
-
-
-
-<BuscadorPokemon/>
+<BuscadorPokemon pokemonInfo={this.state.pokemonInfo} setPokeInfo={this.setPokeInfo}/>
 
         <p
           style={{
