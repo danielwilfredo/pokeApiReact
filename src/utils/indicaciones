@@ -1,0 +1,30 @@
+Buenas jovenes este fin de semana no habra clases y tambien quiero que practiquen las clases porfa
+
+les dejo el ejercicio 
+
+quiero que me hagan el ejemplo que estuvimos trabajando en la clase usando la Poke API
+
+Necesito una pokedex de la primera generacion de pokemon
+Funcionalidades:
+-> que se pueda buscar por nombre o tipo
+-> La aplicacion solo debe mostrar la card del pokemon con su imagen/ nombre/tipo
+-> Debo poder hacer scroll y ver la lista completa de pokemones
+-> Toda la app debe de ir con clases no quiero ni un solo hook y todo debe de ir por componentes
+-> Para la lista necesito que usen flatlist y no ScrollView
+-> Necesito codigo en un repo de git y video de como funciona 
+-> Los que no me entreguen la tarea les va a tocar pagar su comida de la proxima semana
+
+exitos y si necesitan ayuda me lo hacen saber 
+-> quiero que usen los ciclos de vida:
+ComponentDidUpdate
+ComponentDidMount
+Contructor
+
+
+/// apoyo nuevo xd
+
+
+primer enlace a consultar
+https://pokeapi.co/api/v2/pokemon?limit=151
+
+para cargar los primeros 151 pokemones y luego buscar en ese enlace lo que necesite iguess
