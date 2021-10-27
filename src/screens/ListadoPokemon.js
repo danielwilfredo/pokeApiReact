@@ -71,10 +71,13 @@ class ListadoPokemon extends React.Component {
           {this.state.pokemonInfo.map((resultado) => (
             <div className="container-poke" key={resultado?.name}>
               <div className="info-pokemon">
+                <div className="imgPokemon">
                 <img
                   src={resultado?.sprites.front_default}
                   alt="imagen pokemon"
                 />
+                </div>
+   
                 <p className="Text-info">Number: {resultado?.id}</p>
                 <p className="Text-info">Name: {resultado?.name}</p>
                 <p className="Text-info">
