@@ -77,7 +77,12 @@ class ListadoPokemon extends React.Component {
 
     return (
       <>
-<BuscadorPokemon pokemonInfo={this.state.pokemonInfo} setPokeInfo={this.setPokeInfo} filtrado={this.state.filtrado} setFiltrado={this.setFiltrado}/>
+<BuscadorPokemon 
+pokemonInfo={this.state.pokemonInfo}
+ setPokeInfo={this.setPokeInfo} 
+ filtrado={this.state.filtrado} 
+ setFiltrado={this.setFiltrado}
+ setpokemonInfoFiltrada={this.setpokemonInfoFiltrada}/>
 
         <p
           style={{
@@ -92,7 +97,27 @@ class ListadoPokemon extends React.Component {
         <div className="listado">
    
    {         //ternario para cargar condicionalmente las cosas
-            filtrado ? (<><p> NO TIENE QUE SALIR NADA</p></>) : (<>{
+            filtrado ? (<>{
+              this.state.pokemonInfoFiltrada.map((resultado) => (
+              <div className="container-poke" key={resultado?.name}>
+                <div className="info-pokemon">
+                  <div className="imgPokemon">
+                  <img
+                    src={resultado?.sprites.front_default}
+                    alt="imagen pokemon"
+                  />
+                  </div>
+     
+                  <p className="Text-info">Number: {resultado?.id}</p>
+                  <p className="Text-info">Name: {resultado?.name}</p>
+                  <p className="Text-info">
+                    Type: {resultado?.types[0].type.name}
+                  </p>
+                </div>
+              </div>
+            ))
+            
+            }</>) : (<>{
               this.state.pokemonInfo.map((resultado) => (
               <div className="container-poke" key={resultado?.name}>
                 <div className="info-pokemon">

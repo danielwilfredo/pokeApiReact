@@ -91,6 +91,7 @@
   padding: 15px;
   border-radius: 15px;
   border-style: none;
+  margin: 10px;
 }
 .btn-search:hover{
   margin-top: 15px;
@@ -101,6 +102,7 @@
   font-size: 25px;
   font-weight: 500;
   padding: 15px;
+  margin: 10px;
 }
 .input-pokemon{
   margin:5px;
