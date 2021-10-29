@@ -32,6 +32,10 @@ class BuscadorPokemon extends React.Component {
           setFiltrado=(filtrado, pokeFiltrado)=>{
             this.props.setFiltrado(filtrado);
             this.props.setpokemonInfoFiltrada(pokeFiltrado);
+            this.setState({
+              typePokemon:"",
+              pokemon:""
+            })
 
           }
 
@@ -54,9 +58,16 @@ class BuscadorPokemon extends React.Component {
       <>
         <p className="Text-info">Buscador</p>
         <label className="Text-info">Search Pokemon by Type:</label>
-        <input className="input-pokemon" name="type" id="type" onChange={(event)=> this.setTypePokemon(event.target.value)}/>
+        <input className="input-pokemon"
+         name="type" id="type"
+          onChange={(event)=> this.setTypePokemon(event.target.value)}
+          value={typePokemon}
+          />
         <label className="Text-info">Search Pokemon by Name:</label>
-        <input className="input-pokemon" name="pokemon" id="pokemon" onChange={(event)=> this.setPokemon(event.target.value)}/>
+        <input className="input-pokemon" 
+        name="pokemon" id="pokemon" 
+        onChange={(event)=> this.setPokemon(event.target.value)}
+        value={pokemon}/>
         <br />
         <button  className="btn-search" onClick={()=>this.setFiltrado(true, typefilter)}>
           Search Type
