@@ -110,5 +110,14 @@
   font-size: 25px;
   font-weight: bold;
   width: 250px;
- 
+}
+.Text-info-search{
+  background-color: #282c34;
+  color: #fff;
+  height: 25px;
+  width: auto;
+  padding: 5px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 25px;
 }

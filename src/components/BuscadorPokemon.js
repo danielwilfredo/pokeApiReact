@@ -57,13 +57,13 @@ class BuscadorPokemon extends React.Component {
       return (
       <>
         <p className="Text-info">Buscador</p>
-        <label className="Text-info">Search Pokemon by Type:</label>
+        <label className="Text-info-search">Search Pokemon by Type:</label>
         <input className="input-pokemon"
          name="type" id="type"
           onChange={(event)=> this.setTypePokemon(event.target.value)}
           value={typePokemon}
           />
-        <label className="Text-info">Search Pokemon by Name:</label>
+        <label className="Text-info-search">Search Pokemon by Name:</label>
         <input className="input-pokemon" 
         name="pokemon" id="pokemon" 
         onChange={(event)=> this.setPokemon(event.target.value)}
